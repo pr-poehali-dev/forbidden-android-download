@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -15,30 +15,26 @@
     --popover: 220 35% 12%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 263 70% 70%;
-    --primary-foreground: 220 40% 8%;
+    --primary: 24 95% 53%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 199 89% 48%;
+    --secondary: 38 92% 50%;
     --secondary-foreground: 220 40% 8%;
 
     --muted: 220 30% 20%;
     --muted-foreground: 215 20% 65%;
 
-    --accent: 263 70% 70%;
-    --accent-foreground: 220 40% 8%;
+    --accent: 24 95% 53%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 220 30% 25%;
     --input: 220 30% 20%;
-    --ring: 263 70% 70%;
+    --ring: 24 95% 53%;
 
     --radius: 0.5rem;
-
-    --neon-purple: 263 70% 70%;
-    --neon-cyan: 199 89% 48%;
-    --dark-bg: 220 40% 8%;
   }
 }
 
@@ -49,45 +45,16 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: "Inter", sans-serif;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Orbitron", sans-serif;
+    font-family: "Roboto", sans-serif;
   }
 }
 
 @layer utilities {
-  .neon-glow {
-    box-shadow:
-      0 0 10px hsl(var(--neon-purple)),
-      0 0 20px hsl(var(--neon-purple)),
-      0 0 30px hsl(var(--neon-purple));
+  .game-glow {
+    box-shadow: 0 0 20px rgba(249, 115, 22, 0.4);
   }
 
-  .neon-glow-cyan {
-    box-shadow:
-      0 0 10px hsl(var(--neon-cyan)),
-      0 0 20px hsl(var(--neon-cyan)),
-      0 0 30px hsl(var(--neon-cyan));
-  }
-
-  .neon-text {
-    text-shadow:
-      0 0 10px hsl(var(--neon-purple)),
-      0 0 20px hsl(var(--neon-purple)),
-      0 0 30px hsl(var(--neon-purple));
-  }
-
-  .neon-border {
-    border: 2px solid hsl(var(--neon-purple));
-    box-shadow:
-      0 0 5px hsl(var(--neon-purple)),
-      inset 0 0 5px hsl(var(--neon-purple));
+  .gold-glow {
+    box-shadow: 0 0 15px rgba(254, 198, 161, 0.3);
   }
 }
